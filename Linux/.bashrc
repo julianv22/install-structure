@@ -145,4 +145,3 @@ export XMODIFIERS=@im=ibus
 
 eval "$(oh-my-posh init bash --config ~/.quick-term.omp.json)"
 . /usr/share/autojump/autojump.sh
-xmodmap -e 'add mod3 = Scroll_Lock'

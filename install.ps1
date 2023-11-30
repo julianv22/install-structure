@@ -50,7 +50,7 @@ Write-Start "Installing apps..."
 	Write-App "<# Sofwares #>";		scoop install obs-studio vcredist-aio # discord wpsoffice bleachbit hibit-uninstaller
 	Write-App "<# Games #>";		scoop install steam
 	Write-App "<# JX-Tools #>";		scoop install winscp hxd ida-free
-	Write-App "<# Apps #>";			scoop install neofetch btop nano irfanview nilesoft-shell shutup10 kdeconnect wingetui
+	Write-App "<# Apps #>";			scoop install neofetch btop nano irfanview nilesoft-shell shutup10 kdeconnect # wingetui
 	Write-Host; code --install-extension vscode-icons-team.vscode-icons --force
 	Write-Host "Add 'Open with Code' to Context Menu..."
 	reg import "$env:SCOOP_APPS\vscode\current\install-context.reg"
