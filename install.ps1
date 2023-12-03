@@ -26,13 +26,14 @@ Write-Start "Installing scoop..."
 Write-Done
 
 Write-Start "Installing git & buckets..."
-	scoop install git
-	scoop bucket add extras
-	scoop bucket add java
-	scoop bucket add main
-	scoop bucket add nerd-fonts
-    scoop bucket add nonportable
-    scoop bucket add versions
+	scoop install git;
+	scoop bucket add extras;
+	scoop bucket add games;
+	scoop bucket add java;
+	scoop bucket add main;
+	scoop bucket add nerd-fonts;
+	scoop bucket add nonportable;
+	scoop bucket add versions;
 Write-Done
 
 Write-Start "Installing Windows Terminal & Powershell..."
