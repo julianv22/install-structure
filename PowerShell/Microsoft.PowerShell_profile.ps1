@@ -48,5 +48,4 @@ $Directories = "$env:USERPROFILE\AppData\Local\Temp", "C:\Windows\Temp"
 		Remove-Item -Path $Dir -Recurse -Force
 	}
 }
-# Start-BitsTransfer -Source "https://raw.githubusercontent.com/julianv22/jx-offline/main/Microsoft.PowerShell_profile.ps1" -Destination $PROFILE
 # (Get-PSReadLineOption).HistorySavePath
