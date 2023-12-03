@@ -1,0 +1,4 @@
+#!/usr/bin/sh
+sleep 4
+exec xmodmap -e 'add mod3 = Scroll_Lock'
+exit
