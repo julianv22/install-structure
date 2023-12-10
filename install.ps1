@@ -1,7 +1,5 @@
-# irm https://christitus.com/win | iex
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 Set-ItemProperty -Path REGISTRY::HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System -Name ConsentPromptBehaviorAdmin -Value 0
-# irm christitus.com/win | iex
 
 # Function
 function Write-Start {
@@ -23,6 +21,7 @@ Write-Start "Installing scoop..."
 	} else {
 		iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
 		# irm get.scoop.sh | iex
+		# irm christitus.com/win | iex
 	}
 Write-Done
 
@@ -38,7 +37,8 @@ Write-Start "Installing git & buckets..."
 Write-Done
 
 Write-Start "Installing Windows Terminal & Powershell..."
-	scoop install windows-terminal pwsh psreadline oh-my-posh terminal-icons
+	scoop install windows-terminal pwsh
+	scoop install oh-my-posh terminal-icons
 	if (!(test-path $PROFILE)) {
 		New-Item -Path $PROFILE -Type File -Force
 	}
@@ -47,12 +47,19 @@ Write-Start "Installing Windows Terminal & Powershell..."
 Write-Done
 
 Write-Start "Installing apps..."
-	Write-App "<# Fonts #>";		scoop install SourceCodePro-NF-Mono
-	Write-App "<# Developing #>";	scoop install nodejs python vscode kate
-	Write-App "<# Sofwares #>";		scoop install obs-studio okular irfanview kdeconnect vlc vcredist-aio # discord wpsoffice bleachbit hibit-uninstaller
-	Write-App "<# Games #>";		scoop install steam
-	Write-App "<# JX-Tools #>";		scoop install winscp hxd ida-free
-	Write-App "<# Apps #>";			scoop install neofetch btop nano nilesoft-shell shutup10 winget
+	Write-App "<# Fonts #>";
+		scoop install SourceCodePro-NF-Mono
+	Write-App "<# Developing #>";
+		scoop install nodejs python vscode kate
+	Write-App "<# Sofwares #>";
+		scoop install obs-studio okular irfanview
+		scoop install vlc vcredist-aio # discord wpsoffice bleachbit hibit-uninstaller
+	Write-App "<# Games #>";
+		scoop install steam
+	Write-App "<# JX-Tools #>";
+		scoop install winscp hxd ida-free
+	Write-App "<# Apps #>";
+		scoop install neofetch btop nano nilesoft-shell shutup10 winget
 	Write-Host; code --install-extension vscode-icons-team.vscode-icons --force
 	Write-Host "Add 'Open with Code' to Context Menu..."
 	reg import "$env:SCOOP_APPS\vscode\current\install-context.reg"

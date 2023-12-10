@@ -26,7 +26,7 @@ function PS-Windows-Update {
 	if (Get-Module -ListAvailable -Name PSWindowsUpdate) {
 		Write-Warning "PSWindowsUpdate is already installed"
 	} else {
-		Write-Start "Installing PSWindowsUpdate..."
+		Write-Host "Installing PSWindowsUpdate..."
 		Install-Module PSWindowsUpdate -Force
 		Add-WUServiceManager -MicrosoftUpdate -Confirm:$false
 	}
