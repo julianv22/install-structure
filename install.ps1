@@ -49,7 +49,7 @@ Write-Done
 Write-Start "Installing apps..."
 	Write-App "<# Fonts #>";		scoop install SourceCodePro-NF-Mono
 	Write-App "<# Developing #>";	scoop install nodejs python vscode kate
-	Write-App "<# Sofwares #>";		scoop install obs-studio okular irfanview kdeconnect vcredist-aio # discord wpsoffice bleachbit hibit-uninstaller
+	Write-App "<# Sofwares #>";		scoop install obs-studio okular irfanview kdeconnect vlc vcredist-aio # discord wpsoffice bleachbit hibit-uninstaller
 	Write-App "<# Games #>";		scoop install steam
 	Write-App "<# JX-Tools #>";		scoop install winscp hxd ida-free
 	Write-App "<# Apps #>";			scoop install neofetch btop nano nilesoft-shell shutup10 winget
