@@ -7,7 +7,7 @@ git commit -a -m ''
 git push -f
 git checkout
 git remote get-url origin
-(Get-PSReadLineOption).HistorySavePath
+notepad (Get-PSReadLineOption).HistorySavePath
 Get-WindowsUpdate
 neofetch
 Install-WindowsUpdate -AcceptAll
@@ -18,4 +18,3 @@ cd
 cd E:\GitHub\install-structure\
 cls
 ########################################################################
-S-Update; W-Update
