@@ -1,0 +1,21 @@
+S-Clean
+S-Update; W-Update
+S-Update
+W-Update
+git status
+git commit -a -m ''
+git push -f
+git checkout
+git remote get-url origin
+(Get-PSReadLineOption).HistorySavePath
+Get-WindowsUpdate
+neofetch
+Install-WindowsUpdate -AcceptAll
+PS-Windows-Update
+Start-BitsTransfer -Source "https://raw.githubusercontent.com/julianv22/jx-offline/main/Microsoft.PowerShell_profile.ps1" -Destination $PROFILE
+winget update --all
+cd
+cd E:\GitHub\install-structure\
+cls
+########################################################################
+S-Update; W-Update
