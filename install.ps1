@@ -1,3 +1,4 @@
+# irm https://christitus.com/win | iex
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 Set-ItemProperty -Path REGISTRY::HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System -Name ConsentPromptBehaviorAdmin -Value 0
 # irm christitus.com/win | iex
