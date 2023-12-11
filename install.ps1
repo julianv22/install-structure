@@ -52,7 +52,7 @@ Write-Start "Installing apps..."
 	Write-App "<# Developing #>";
 		scoop install nodejs python vscode kate
 	Write-App "<# Sofwares #>";
-		scoop install obs-studio okular irfanview
+		scoop install obs-studio okular nomacs
 		scoop install vlc vcredist-aio
 		# scoop install discord wpsoffice bleachbit hibit-uninstaller
 	Write-App "<# Games #>";
