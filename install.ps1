@@ -38,8 +38,8 @@ Write-Start "Installing git & buckets..."
 Write-Done
 
 Write-Start "Installing Windows Terminal & Powershell..."
-	scoop install windows-terminal pwsh
-	scoop install oh-my-posh terminal-icons
+	scoop install windows-terminal pwsh;
+	scoop install oh-my-posh terminal-icons;
 	if (!(test-path $PROFILE)) {
 		New-Item -Path $PROFILE -Type File -Force
 	}
@@ -55,7 +55,7 @@ Write-Start "Installing apps..."
 	Write-App "<# Sofwares #>";
 		scoop install obs-studio okular nomacs
 		scoop install vlc vcredist-aio
-		# scoop install discord wpsoffice bleachbit hibit-uninstaller
+		# scoop install discord wpsoffice bleachbit hibit-uninstaller trafficmonitor brave
 	Write-App "<# Games #>";
 		scoop install steam
 	Write-App "<# JX-Tools #>";
