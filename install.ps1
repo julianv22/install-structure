@@ -55,13 +55,13 @@ Write-Start "Installing apps..."
 	Write-App "<# Sofwares #>";
 		scoop install obs-studio okular nomacs
 		scoop install vlc vcredist-aio
-		# scoop install discord wpsoffice bleachbit hibit-uninstaller trafficmonitor brave
+		# scoop install discord wpsoffice bleachbit hibit-uninstaller brave bitwarden
 	Write-App "<# Games #>";
 		scoop install steam
 	Write-App "<# JX-Tools #>";
 		scoop install winscp hxd ida-free
 	Write-App "<# Apps #>";
-		scoop install neofetch btop nano
+		scoop install neofetch btop nano trafficmonitor
 		scoop install nilesoft-shell shutup10 winget
 	Write-Host; code --install-extension vscode-icons-team.vscode-icons --force
 	Write-Host "Add 'Open with Code' to Context Menu..."
