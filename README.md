@@ -10,3 +10,47 @@
  <a href="#"><img title="Commits" src="https://img.shields.io/github/commit-activity/t/julianv22/install-structure?logo=git&label=Commits"></a>
  <a href="https://github.com/julianv22/install-structure/commits/main"><img title="Last Commit" src="https://img.shields.io/github/last-commit/julianv22/install-structure?logo=codacy&label=Last%20Commit&labelColor=2F4F4F"></a>
 </p>
+
+
+## reg import
+
+### 7-Zip
+Add 7-Zip as a context menu option by running: 
+```
+reg import "C:\Users\Administrator\scoop\apps\7zip\current\install-context.reg"
+```
+
+### Git
+
+Set Git Credential Manager Core by running: 
+```
+reg import "git config --global credential.helper manager"
+```
+
+To add context menu entries, run
+```
+reg import 'C:\Users\Administrator\scoop\apps\git\current\install-context.reg'
+```
+
+To create file-associations for .git* and .sh files, run 
+```
+reg import 'C:\Users\Administrator\scoop\apps\git\current\install-file-associations.reg'
+```
+
+### PowerShell
+
+Add PowerShell Core as a explorer context menu by running:
+```
+reg import 'C:\Users\Administrator\scoop\apps\pwsh\current\install-explorer-context.reg'
+```
+For file context menu, run 
+```
+reg import 'C:\Users\Administrator\scoop\apps\pwsh\current\install-file-context.reg'
+```
+
+### Windows Terminal
+
+Add Windows Terminal as a context menu option by running 
+```
+reg import "C:\Users\Administrator\scoop\apps\windows-terminal\current\install-context.reg"
+```   
