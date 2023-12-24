@@ -12,7 +12,7 @@
 </p>
 
 
-## reg import
+# Importing Registry
 
 ### 7-Zip
 Add 7-Zip as a context menu option by running: 
