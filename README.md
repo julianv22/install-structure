@@ -38,8 +38,8 @@ scoop bucket add versions;
 ```PowerShell
 scoop install windows-terminal pwsh;
 scoop install oh-my-posh terminal-icons;
-scoop install SourceCodePro-NF-Mono steam brave;
-# scoop install trafficmonitor
+scoop install SourceCodePro-NF-Mono;
+# scoop install  steam brave trafficmonitor
 ```
 
 ### Create PowerShell's Profile
