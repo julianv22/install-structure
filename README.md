@@ -17,8 +17,8 @@
 
 ```PowerShell
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-
 ```
+
 ### Install scoop
 
 ```PowerShell
