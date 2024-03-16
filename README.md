@@ -31,6 +31,7 @@ scoop bucket add main;
 scoop bucket add nerd-fonts;
 scoop bucket add nonportable;
 scoop bucket add versions;
+scoop update;
 ```
 
 ### Install apps
