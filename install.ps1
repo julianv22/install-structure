@@ -51,7 +51,8 @@ Write-Start "Installing apps..."
 	Write-App "<# Fonts #>";
 		scoop install SourceCodePro-NF-Mono
 	Write-App "<# Developing #>";
-		scoop install nodejs python vscode kate
+		scoop install nodejs python vscode notepadplusplus 
+		# scoop install kate
 	Write-App "<# Sofwares #>";
 		scoop install obs-studio okular nomacs
 		scoop install vlc vcredist-aio
