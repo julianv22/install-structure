@@ -56,7 +56,7 @@ Write-Start "Installing apps..."
 	Write-App "<# Sofwares #>";
 		scoop install obs-studio okular nomacs
 		scoop install vlc vcredist-aio
-		# scoop install discord wpsoffice bleachbit hibit-uninstaller brave bitwarden
+		# scoop install discord wpsoffice bleachbit hibit-uninstaller brave bitwarden qttabbar-np
 	Write-App "<# Games #>";
 		scoop install steam
 	Write-App "<# JX-Tools #>";
