@@ -19,6 +19,12 @@
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 ```
 
+### Set Enviroment Folder
+
+```PowerShell
+$env:SCOOP = 'D:\Scoop'
+```
+
 ### Install scoop
 
 ```PowerShell
@@ -40,7 +46,6 @@ scoop update;
 scoop install windows-terminal pwsh;
 scoop install oh-my-posh terminal-icons;
 scoop install SourceCodePro-NF-Mono;
-# scoop install  steam brave trafficmonitor
 ```
 
 ### Create PowerShell's Profile
@@ -59,7 +64,7 @@ Start-BitsTransfer -Source "https://raw.githubusercontent.com/julianv22/install-
 ### 7-Zip
 Add 7-Zip as a context menu option by running: 
 ```PowerShell
-reg import "C:\Users\Administrator\scoop\apps\7zip\current\install-context.reg"
+reg import "$env:SCOOP_APPS\7zip\current\install-context.reg"
 ```
 
 ### Git
@@ -71,28 +76,28 @@ reg import "git config --global credential.helper manager"
 
 To add context menu entries, run
 ```PowerShell
-reg import 'C:\Users\Administrator\scoop\apps\git\current\install-context.reg'
+reg import '$env:SCOOP_APPS\git\current\install-context.reg'
 ```
 
 To create file-associations for .git* and .sh files, run 
 ```PowerShell
-reg import 'C:\Users\Administrator\scoop\apps\git\current\install-file-associations.reg'
+reg import $env:SCOOP_APPS\git\current\install-file-associations.reg'
 ```
 
 ### PowerShell
 
 Add PowerShell Core as a explorer context menu by running:
 ```PowerShell
-reg import 'C:\Users\Administrator\scoop\apps\pwsh\current\install-explorer-context.reg'
+reg import '$env:SCOOP_APPS\pwsh\current\install-explorer-context.reg'
 ```
 For file context menu, run 
 ```PowerShell
-reg import 'C:\Users\Administrator\scoop\apps\pwsh\current\install-file-context.reg'
+reg import '$env:SCOOP_APPS\pwsh\current\install-file-context.reg'
 ```
 
 ### Windows Terminal
 
 Add Windows Terminal as a context menu option by running 
 ```PowerShell
-reg import "C:\Users\Administrator\scoop\apps\windows-terminal\current\install-context.reg"
+reg import "$env:SCOOP_APPS\windows-terminal\current\install-context.reg"
 ```   

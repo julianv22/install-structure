@@ -1,4 +1,5 @@
-$env:SCOOP_APPS="$env:USERPROFILE\scoop\apps"
+$env:SCOOP = 'D:\Scoop'
+$env:SCOOP_APPS="$env:SCOOP\apps"
 
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\quick-term.omp.json" | Invoke-Expression
 
