@@ -51,7 +51,7 @@ Write-Done
 Write-Start "Installing apps..."
 Write-App "<# Fonts #>";
 scoop install SourceCodePro-NF-Mono
-Write-App "<# Dev Apss #>";
+Write-App "<# Dev Apps #>";
 scoop install nodejs python vscode notepadplusplus 
 # scoop install kate
 Write-App "<# Sofwares #>";

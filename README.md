@@ -52,6 +52,16 @@ scoop install oh-my-posh terminal-icons;
 scoop install SourceCodePro-NF-Mono;
 ```
 
+#### More optional
+
+```PowerShell
+scoop install nodejs python vscode notepadplusplus;
+```
+
+```PowerShell
+scoop install obs-studio kdeconnect steam btop shutup10 winget;
+```
+
 ### Open Windows Terminal and create PowerShell's Profile
 
 ```PowerShell
