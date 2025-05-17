@@ -1,5 +1,5 @@
-$env:SCOOP = 'D:\Scoop'
-$env:SCOOP_APPS="$env:SCOOP\apps"
+#$env:SCOOP = 'D:\Scoop'
+#$env:SCOOP_APPS="$env:SCOOP\apps"
 
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\quick-term.omp.json" | Invoke-Expression
 
@@ -8,8 +8,8 @@ Import-Module PSReadLine
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 
-function JX-Location {Set-Location -Path D:\jx-offline; ls}
-Set-Alias -Name jx -Value JX-Location
+#function JX-Location {Set-Location -Path D:\jx-offline; ls}
+#Set-Alias -Name jx -Value JX-Location
 
 function S-Update {
 	scoop update
