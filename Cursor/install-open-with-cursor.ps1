@@ -8,8 +8,8 @@ if (-not $isAdmin) {
 }
 
 # Define the Cursor executable path
-$cursorExePath = [System.IO.Path]::Combine($env:LOCALAPPDATA, "Programs", "cursor", "Cursor.exe")
-
+# $cursorExePath = [System.IO.Path]::Combine($env:LOCALAPPDATA, "Programs", "cursor", "Cursor.exe")
+$cursorExePath = "C:\Users\Admin\scoop\apps\cursor\current\Cursor.exe"
 # Check if the Cursor executable exists
 if (Test-Path $cursorExePath) {
 
